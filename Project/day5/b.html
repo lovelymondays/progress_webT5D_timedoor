@@ -1,0 +1,197 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canon Store</title>
+    <link
+      rel="shortcut icon"
+      href="https://thumb.viva.co.id/media/frontend/thumbs3/2016/12/08/5848d6611399f-logo-canon_1265_711.jpg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        text-align: center;
+      }
+      body {
+        margin-top: 0;
+      }
+      .judul {
+        background-color: blueviolet;
+        color: bisque;
+        box-shadow: 3px 4px 4px goldenrod;
+        margin-top: 30px;
+      }
+      .apa {
+        background-color: beige;
+        color: lightcoral;
+      }
+      nav {
+        position: absolute;
+        right: 0;
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 15px;
+        float: left;
+      }
+      a:hover {
+        background-color: rgb(182, 145, 108);
+      }
+      .main-header {
+        background-color: greenyellow;
+        padding-left: 10px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+      }
+      .header-info {
+        text-align: left;
+        color: rgb(85, 85, 82);
+        padding: 0px;
+        margin: 14px;
+        position: absolute;
+        left: 0px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .dropdown {
+        display: flex;
+        flex-direction: column;
+      }
+      .dropdown-content {
+        display: none;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        top: 100%;
+        background-color: rgb(173, 95, 35);
+      }
+      .dropdown-item:hover {
+        background-color: rgb(210, 84, 84);
+        cursor: pointer;
+      }
+      a.dropdown-item {
+        min-width: 160px;
+        text-align: left;
+      }
+
+      li.dropdown-item:hover a.dropdown-item {
+        text-align: left;
+        color: gainsboro;
+      }
+      .items {
+        display: flex;
+        justify-content: center;
+      }
+      .item {
+        background-color: rgb(242, 232, 175);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      .item img {
+        width: 260px;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .item h3,
+      p {
+        text-align: center;
+        padding: 5px;
+        color: rgb(167, 216, 255);
+      }
+      #products {
+        background-image: url("https://id.canon/media/image/2021/07/05/4179f43c4c7749509f16969ba11ae6a2_2+-+Your+Canon+Camera.jpg");
+      }
+
+      div.about {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        background-color: rgb(82, 114, 143);
+        width: 80%;
+      }
+      .about {
+        text-align: left;
+        color: rgb(255, 187, 103);
+        padding: 10px;
+        width: 100%;
+      }
+
+      div.image-about {
+        margin-bottom: auto;
+        margin-top: auto;
+      }
+      img.about-us {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <h3 class="header-info">Canon Shop</h3>
+        <nav>
+          <div class="dropdown">
+            <div>
+              <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown-content">
+              <ul>
+                <li class="dropdown-item">
+                  <a class="dropdown-item" href="#products">Products</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-item" href="#pricing-table"
+                    >Pricing Table</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="">Price List</a>
+          <a href="">About Us</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="about">
+          <div>
+            <h2 class="about">about us</h2>
+            <p class="about">Online shop Canon</p>
+          </div>
+          <div class="image-about">
+            <img
+              src="https://vertassets.blob.core.windows.net/image/1d903a54/1d903a54-22dc-4736-9754-a17b00b3fefa/canon_image.jpg"
+              alt="about us"
+              width="450px"
+              height="auto"
+              class="about-us"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
