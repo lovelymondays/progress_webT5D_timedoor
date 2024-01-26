@@ -2,34 +2,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canon Store</title>
+    <title>Photocard JKT48</title>
     <link
       rel="shortcut icon"
-      href="https://thumb.viva.co.id/media/frontend/thumbs3/2016/12/08/5848d6611399f-logo-canon_1265_711.jpg"
+      href="https://upload.wikimedia.org/wikipedia/commons/1/1e/20220121%E2%80%94Sana_%EC%82%AC%EB%82%98_Campaign_Film%2C_Pearlygates_x_Twice_2022.jpg"
       type="image/x-icon"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
     <style>
       * {
         text-align: center;
+        font-family: "Plus Jakarta Sans", sans-serif;
       }
       body {
-        margin-top: 0;
+        margin: 0;
       }
       .judul {
-        background-color: blueviolet;
-        color: bisque;
-        box-shadow: 3px 4px 4px goldenrod;
-        margin-top: 30px;
-      }
-      .apa {
-        background-color: beige;
-        color: lightcoral;
+        background-color: black;
+        color: white;
+        box-shadow: 2px 2px 5px red;
+        margin-top: 50px;
       }
       nav {
         position: absolute;
@@ -38,17 +36,17 @@
       }
       a {
         text-decoration: none;
-        color: rgb(0, 0, 0);
+        color: orangered;
         padding: 15px;
         float: left;
       }
       a:hover {
-        background-color: rgb(182, 145, 108);
+        background-color: rgb(0, 0, 0);
+        font-size: 45px;
       }
       .main-header {
-        background-color: greenyellow;
+        background-color: rgb(93, 56, 56);
         padding-left: 10px;
-        position: fixed;
         top: 0px;
         left: 0px;
         right: 0px;
@@ -56,12 +54,22 @@
       }
       .header-info {
         text-align: left;
-        color: rgb(85, 85, 82);
+        color: orangered;
         padding: 0px;
         margin: 14px;
         position: absolute;
         left: 0px;
       }
+      .double img {
+        margin: 5px;
+      }
+
+      #home {
+        top: 500px;
+        background-color: blue;
+        height: 200px;
+      }
+
       ul {
         list-style-type: none;
         padding: 0;
@@ -78,10 +86,10 @@
         display: block;
         position: absolute;
         top: 100%;
-        background-color: rgb(173, 95, 35);
+        background-color: darkred;
       }
       .dropdown-item:hover {
-        background-color: rgb(210, 84, 84);
+        background-color: red;
         cursor: pointer;
       }
       a.dropdown-item {
@@ -91,47 +99,60 @@
 
       li.dropdown-item:hover a.dropdown-item {
         text-align: left;
-        color: gainsboro;
+        color: black;
       }
+
       .items {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
       }
       .item {
-        background-color: rgb(242, 232, 175);
+        background-color: darkred;
         display: flex;
         flex-direction: column;
         padding: 10px;
+        align-items: center;
+        margin: 20px;
       }
       .item img {
         width: 260px;
-        height: auto;
+        height: 260px;
         max-width: 100%;
         max-height: 100%;
+        object-fit: contain;
+        background-color: white;
       }
-      .item h3,
-      p {
+      .item h3 {
         text-align: center;
         padding: 5px;
-        color: rgb(167, 216, 255);
-      }
-      #products {
-        background-image: url("https://id.canon/media/image/2021/07/05/4179f43c4c7749509f16969ba11ae6a2_2+-+Your+Canon+Camera.jpg");
+        color: whitesmoke;
       }
 
-      div.about {
+      .item p {
+        text-align: center;
+        padding: 5px;
+        color: whitesmoke;
+      }
+
+      #products {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/82/JKT48.svg");
+      }
+
+      /* div.about {
         display: flex;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5px;
         margin-bottom: 30px;
-        background-color: rgb(82, 114, 143);
+        background-color: blanchedalmond;
         width: 80%;
       }
+
       .about {
         text-align: left;
-        color: rgb(255, 187, 103);
+        color: black;
         padding: 10px;
         width: 100%;
       }
@@ -140,16 +161,60 @@
         margin-bottom: auto;
         margin-top: auto;
       }
+
       img.about-us {
         max-width: 100%;
         max-height: 100%;
+      } */
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+      }
+
+      .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        background-color: darkred;
+        color: white;
+        height: 100%;
+      }
+
+      .about-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        max-width: 50%;
+      }
+
+      .about-img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        max-width: 50%;
+        height: auto;
+      }
+
+      .img {
+        width: 550px;
+        height: auto;
+        object-fit: contain;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="main-header">
-        <h3 class="header-info">Canon Shop</h3>
+        <h3 class="header-info">Photocard JKT48</h3>
+
         <nav>
           <div class="dropdown">
             <div>
@@ -168,30 +233,32 @@
               </ul>
             </div>
           </div>
-          <a href="">Price List</a>
+          <a href="https://www.arjism.com/blogs/first.blog.copy">Price List</a>
           <a href="">About Us</a>
         </nav>
       </div>
     </header>
+
     <main>
-      <section>
-        <div class="about">
-          <div>
-            <h2 class="about">about us</h2>
-            <p class="about">Online shop Canon</p>
-          </div>
-          <div class="image-about">
-            <img
-              src="https://vertassets.blob.core.windows.net/image/1d903a54/1d903a54-22dc-4736-9754-a17b00b3fefa/canon_image.jpg"
-              alt="about us"
-              width="450px"
-              height="auto"
-              class="about-us"
-            />
-          </div>
+      <section class="about">
+        <div class="about-desc">
+          <h2>About Us</h2>
+          <p>
+            Ini jualan photocard JKT48 yang langka, pokoknya cuman ada disini
+            doang bisa ada nemu photocard kaya gini, tolong dibeli untuk
+            keperluan oshi, offiical merch langsung dari sini
+          </p>
+        </div>
+        <div class="about-img">
+          <img
+            src="https://thumb.viva.id/intipseleb/663x372/2023/02/06/63e0758a10dd2-marsha-jkt48.jpg"
+            alt="About Us"
+            class="img"
+          />
         </div>
       </section>
     </main>
+
     <footer></footer>
   </body>
 </html>

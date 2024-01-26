@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: white;
+        border: 2px solid orangered;
+        color: black;
+        font-size: 20px;
+        border-radius: 8px;
+        padding: 5px 8px;
+      }
+      button:hover {
+        background-color: orangered;
+        color: white;
+      }
+      button:active {
+        box-shadow: 0px 4px darkslateblue;
+        cursor: grab;
+      }
+      .translate:active {
+        transform: translate(20px, -40px);
+      }
+
+      .rotate:active {
+        /* transform: rotate(142deg); */
+        transform: rotate3d(1, 2, 3, 90deg);
+      }
+
+      .scale:active {
+        transform: scale(5, 5);
+      }
+      .skew:active {
+        transform: skew(45deg, 32deg);
+      }
+      .matrix:active {
+        transform: matrix(1, 2, 3, 4, 5, 6);
+      }
+
+      .perspective:active {
+        transform: perspective(90px);
+      }
+    </style>
+  </head>
+  <body>
+    <button>pencet disini</button>
+    <button class="translate">translate</button>
+    <button class="rotate">rotate</button>
+    <button class="scale">scale</button>
+    <button class="skew">skew</button>
+    <button class="matrix">matrix</button>
+    <button class="perspective">
+      <a href="https://www.goatsimulator3.com/">kambing</a>
+    </button>
+  </body>
+</html>
